@@ -1,3 +1,5 @@
+const { intersection } = require("@babel/preset-env/lib/utils");
+
 /**
  * isArrayLengthOdd(numbers):
  * - receives array `numbers`
@@ -9,7 +11,8 @@
  * isArrayLengthOdd([1, 2, 3, 4]) -> flase
  */
 function isArrayLengthOdd(numbers) {
-  // Your code here
+  let isArrayLengthOdd = [1, 3, 5, 7, 9];
+  return true;
 }
 
 /**
@@ -23,7 +26,8 @@ function isArrayLengthOdd(numbers) {
  * isArrayLengthEven([1, 2, 3, 4]) -> true
  */
 function isArrayLengthEven(numbers) {
-  // Your code here
+  let isArrayLengthEven = [2, 4, 6, 8, 10];
+  return true;
 }
 
 /**
@@ -35,9 +39,18 @@ function isArrayLengthEven(numbers) {
  * addLailaToArray(["Mshary", "Hasan"]) -> ["Mshary", "Hasan", "Laila"]
  */
 function addLailaToArray(instructors) {
-  // Your code here
+  instructors.push("Laila");
+  return instructors;
 }
 
+// iwillmake a copy of inst.
+// i will add Laila
+// iwill return it
+// let newarray=instructors;
+// newarray.push("laila");
+// return new aray;
+// also i can
+// return intructors.push("Laila");
 /**
  * eliminateTeam(teams):
  * - receives array `teams`
@@ -47,7 +60,7 @@ function addLailaToArray(instructors) {
  * eliminateTeam(["Brazil", "Germany", "Italy"]) -> "Italy"
  */
 function eliminateTeam(teams) {
-  // Your code here
+  return teams.pop();
 }
 
 /**
@@ -61,27 +74,31 @@ function eliminateTeam(teams) {
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]) -> []
  */
 function secondHalfOfArrayIfItIsEven(fruits) {
-  // Your code here
+  console.log(fruits(["apple", "orange", "banana", "kiwi"]);
+
 }
 
-/**
- * youGottaCalmDown(shout):
- * - receives a string `shout`
- * - returns the string `shout` with at most one exclamation mark (!) at the end.
- *
- * e.g.
- * youGottaCalmDown("HI!!!!!!!!!!") -> "HI!"
- * youGottaCalmDown("Taylor Schwifting!!!!!!!!!!!") -> "Taylor Shwifting!"
- * youGottaCalmDown("Hellooooo") -> "Hellooooo"
- *
- * Hint:
- * - Use number method .indexOf()
- * - Use string method .slice()
- */
+
+
+
+
+// * youGottaCalmDown(shout):
+//  * - receives a string `shout`
+//  * - returns the string `shout` with at most one exclamation mark (!) at the end.
+//  *
+
 function youGottaCalmDown(shout) {
-  // Your code here
+while(shout.indexOf("!") !=-1){
+
+  shout=shout.slice(0,-1);
+}
+return shout;
 }
 
+// chekc if thers !
+// remove but keep one
+// no !
+// return shout
 module.exports = {
   isArrayLengthOdd,
   isArrayLengthEven,
